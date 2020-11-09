@@ -2,7 +2,7 @@
 > This is just-for-fun project to save memes on instagram (hopefully only that).
 
 ### Using instaloader and streamlit python module
-Combine instaloader as back-end and steamlit as front-end then, **boom**, you become a ~~a creeper~~ *ehem i mean*, **a professional stalker**.
+Combine instaloader as back-end and steamlit as front-end then, **boom**, you become a ~~a stalker~~ *ehem i mean*, **a memes dealer**.
 
 Jokes aside, this is just a project to make a user friendly web interface for instaloader (kind of) and use it without a hassle (hopefully).
 
