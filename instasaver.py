@@ -105,7 +105,6 @@ def check_post_url(loader, shortcode, temp):
     post = instaloader.Post.from_shortcode(loader.context, shortcode)
     loader.download_post(post, target=temp)
     file_list = [filename for filename in os.listdir(temp)]
-    #print(len(file_list))
     if len(file_list) == 1:
         try:
             st.image(f'{temp}/{file_list[0]}', use_column_width=True)
@@ -127,10 +126,8 @@ def check_post_url(loader, shortcode, temp):
 
 def download_stories(loader, user, profile, temp):
     profile_id = loader.check_profile_id(user)
-    loader.download_stories(userids=[profile_id.userid], filename_target=profile.username)
+    loader.download_stories(userids=[profile_id.userid])
     file_list = [filename for filename in os.listdir(temp)]
-    for filename in os.listdir(temp):
-        print(filename)
 
     with ZipFile(f'{temp}/{profile.username}_stories.zip', 'w') as zip:
         for filename in file_list:
