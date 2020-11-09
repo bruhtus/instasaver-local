@@ -14,7 +14,6 @@ def main():
     with tempfile.TemporaryDirectory() as temp:
         load = instaloader.Instaloader(
                 dirname_pattern=temp,
-                filename_pattern='saved',
                 download_comments=False,
                 download_geotags=False,
                 download_video_thumbnails=False,
